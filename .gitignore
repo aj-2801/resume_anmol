@@ -17,9 +17,6 @@
 *.vrb
 *.xdv
 
-# Output PDFs (optional - uncomment if you want to track final PDFs)
-# output/*.pdf
-
 # Editor/IDE files
 *.swp
 *.swo
