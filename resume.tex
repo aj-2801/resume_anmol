@@ -1,0 +1,271 @@
+%=============================================================================
+%  MY RESUME
+%  Uses: resume.cls (template class file)
+%  
+%  Edit this file for your content. The template (resume.cls) stays unchanged.
+%=============================================================================
+
+\documentclass{resume}
+
+\begin{document}
+
+% Uncomment to add a page footer:
+% \resumeFooter{Your Name}
+
+
+%=============================================================================
+%  HEADING
+%=============================================================================
+
+\begin{center}
+    {\Huge \scshape Jake Ryan} \\ \vspace{1pt}
+    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+% TIP: To use icons instead, replace the heading above with:
+%
+% \begin{center}
+%     {\Huge \scshape Your Name} \\
+%     \vspace{1pt}
+%     \small
+%     \phoneicon{(+1) 000-000-0000} \sep
+%     \emaillink{you@university.edu} \sep
+%     \linkedinlink{your-linkedin} \sep
+%     \githublink{your-github}
+%     % \sep \scholarlink{your-scholar-id}
+%     % \sep \orcidlink{0000-0000-0000-0000}
+%     % \sep \websitelink{yoursite.com}
+% \end{center}
+
+
+%=============================================================================
+%  EDUCATION
+%=============================================================================
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Southwestern University}{Georgetown, TX}
+      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
+    \resumeSubheading
+      {Blinn College}{Bryan, TX}
+      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  EXPERIENCE
+%=============================================================================
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % --- Position 1 ---
+    \resumeSubheading
+      {Undergraduate Research Assistant}{June 2020 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+    % --- Position 2 ---
+    \resumeSubheading
+      {Information Technology Support Specialist}{Sep. 2018 -- Present}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+      \resumeItemListEnd
+
+    % --- Position 3 ---
+    \resumeSubheading
+      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        \resumeItem{Conducted a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  PROJECTS
+%=============================================================================
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Implemented GitHub OAuth to get data from user's repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  TECHNICAL SKILLS
+%=============================================================================
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%=============================================================================
+%=============================================================================
+%%%
+%%%   SECTION TEMPLATES — copy, uncomment, and fill in as needed
+%%%
+%=============================================================================
+%=============================================================================
+
+% %=========================================================================
+% %  PUBLICATIONS
+% %=========================================================================
+%
+% \section{Publications}
+%   \resumeSubHeadingListStart
+%     \publication{H. Verma}
+%       {, D. Jassby, C. T. Maravelias, Membrane Network Synthesis for Metal Recovery: An Optimization-based Framework,}
+%       {\textit{Separation and Purification Technology}}
+%       {, 377 (2025) 134225.}
+%       {https://doi.org/10.1016/j.seppur.2025.134225}
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  CONFERENCE PRESENTATIONS
+% %=========================================================================
+%
+% \section{Conference Presentations}
+%   \resumeSubHeadingListStart
+%     % With DOI:
+%     \conference{H. Verma}
+%       {and C. T. Maravelias, Synthesis of Liquid Mixture Separation Networks,}
+%       {\textit{ESCAPE35 Conference}}{, Ghent, Belgium, July 6-9, 2025.}
+%       {Systems \& Control Transactions 4, 33-39}
+%       {https://doi.org/10.69997/sct.151896}
+%     % Without DOI (leave last arg empty):
+%     \conference{H. Verma}
+%       {and C. T. Maravelias, Another Talk Title,}
+%       {\textit{AIChE Annual Meeting}}{, Boston, MA, November 2-6, 2025.}
+%       {Session Name}
+%       {}
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  OTHER RESEARCH EXPERIENCE
+% %=========================================================================
+%
+% \section{Other Research Experience}
+%   \resumeSubHeadingListStart
+%     \researchHeading
+%       {Project Title}{IIT Kanpur, India}
+%       {Advisor: Prof. Name}{Aug. 2020 -- Jun. 2021}
+%       \resumeItemListStart
+%         \resumeItem{Built a \bk{plant-wide dynamic model} in Aspen Plus Dynamics}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  LEADERSHIP
+% %=========================================================================
+%
+% \section{Leadership}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Organization Name}{City, Country}
+%       {Role Title}{Start -- End}
+%       \resumeItemListStart
+%         \resumeItem{What you led or accomplished}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  SOCIAL INNOVATION & IMPACT
+% %=========================================================================
+%
+% \section{Social Innovation \& Impact}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Project Name}{City, Country}
+%       {Role, Organization}{Start -- End}
+%       \resumeItemListStart
+%         \resumeItem{Impact and outcome}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  HONORS & AWARDS
+% %=========================================================================
+%
+% \section{Honors \& Awards}
+%   \resumeSubHeadingListStart
+%     \award{2022}{Francis Robbins Upton Fellowship}{Princeton University}
+%     \award{2021}{Proficiency Medal}{IIT Kanpur, India}
+%     \award{2019, 2020, 2021}{Academic Excellence Award}{IIT Kanpur, India}
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  TEACHING EXPERIENCE
+% %=========================================================================
+%
+% \section{Teaching Experience}
+%   \resumeSubHeadingListStart
+%     \teachingentry{Fall 2024}{Process and Energy Systems Design}
+%       {Prof. Christos T. Maravelias}{Princeton University, USA}
+%     \teachingentry{Fall 2023}{Separations in Chemical Engineering \& Biotechnology}
+%       {Prof. A. James Link}{Princeton University, USA}
+%   \resumeSubHeadingListEnd
+
+% %=========================================================================
+% %  MULTIPLE POSITIONS AT SAME ORGANIZATION (example pattern)
+% %=========================================================================
+%
+%     % Use \resumeSubheading for the main/latest role,
+%     % then \resumeSubSubheading for earlier roles:
+%
+%     \resumeSubheading
+%       {Dr. Reddy's Laboratories Ltd.}{Hyderabad, India}
+%       {Process Engineer}{Aug. 2021 -- May 2022}
+%       \resumeItemListStart
+%         \resumeItem{Senior role accomplishment}
+%       \resumeItemListEnd
+%     \resumeSubSubheading
+%       {Technical Intern}{Summer 2020}
+%       \resumeItemListStart
+%         \resumeItem{Intern accomplishment}
+%       \resumeItemListEnd
+
+
+%=============================================================================
+%  END
+%=============================================================================
+
+\end{document}
