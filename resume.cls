@@ -120,7 +120,7 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
-\setlength{\footskip}{4.1pt}       % Fix fancyhdr warning
+\setlength{\footskip}{16pt}        % Room for optional footer; silences fancyhdr warning
 
 \urlstyle{same}
 \raggedbottom
@@ -206,6 +206,13 @@
 \newcommand{\hlink}[2]{\href{#1}{\underline{#2}}}
 \newcommand{\bk}[1]{\textbf{#1}}
 \newcommand{\sep}{\quad$|$\quad}
+
+% Temporary/placeholder metric (underlined so it is easy to find & edit later)
+% Usage: \tmp{40\%}  ->  underlined 40%
+\newcommand{\tmp}[1]{\underline{#1}}
+
+% Summary paragraph:  \summarytext{...}
+\newcommand{\summarytext}[1]{\vspace{2pt}\small{#1}\vspace{-4pt}}
 
 
 %=============================================================================

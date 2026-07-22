@@ -5,11 +5,13 @@ LaTeX-based resume with a reusable template class.
 ## Structure
 
 ```
-├── resume.cls          # Template class (DO NOT EDIT for content changes)
-├── resume.tex          # Your actual resume (EDIT THIS)
-├── template.tex        # Original combined file (reference/backup)
-├── output/             # Compiled PDFs (aux files auto-cleaned)
-└── variants/           # (future) Role-specific versions
+├── resume.cls                    # Template class (DO NOT EDIT for content changes)
+├── resume.tex                    # Neutral master resume (EDIT THIS)
+├── template.tex                  # Original combined file (reference/backup)
+├── variants/                     # Role-tailored versions
+│   ├── process-engineer.tex      # Industry R&D / Process Engineer flavor
+│   └── data-scientist.tex        # Data Science / ML flavor
+└── output/                       # Compiled PDFs (aux files auto-cleaned)
 ```
 
 ## How It Works
@@ -40,15 +42,25 @@ pdflatex -output-directory=output resume.tex
 - Press `Ctrl+Alt+B` to build
 - Press `Ctrl+Alt+V` to view PDF
 
-## Creating Variants
+## Variants
 
-To create role-specific resumes:
-1. Create a `variants/` folder
-2. Copy `resume.tex` → `variants/swe.tex`
-3. Edit for the specific role
-4. Build: `latexmk -pdf variants/swe.tex -outdir=output`
+Role-tailored resumes live in `variants/` and all share `resume.cls`:
 
-All variants will use the same `resume.cls` template.
+```bash
+latexmk -pdf variants/process-engineer.tex -outdir=output
+latexmk -pdf variants/data-scientist.tex  -outdir=output
+```
+
+To add a new variant, copy an existing one and edit it.
+
+## Placeholder Metrics
+
+Numbers wrapped in `\tmp{...}` are **placeholder metrics** and render **underlined**
+in the PDF so they are easy to spot. Replace them with your real figures, e.g.:
+
+```latex
+raising yield by \tmp{12\%}   % <- underlined placeholder, edit before sending
+```
 
 ## License
 

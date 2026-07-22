@@ -1,0 +1,166 @@
+%=============================================================================
+%  HARSHIT VERMA — RESUME (Data Science / ML flavor)
+%  Uses: resume.cls
+%
+%  NOTE: All \tmp{...} values are PLACEHOLDER metrics (rendered underlined).
+%        Replace them with your real numbers before sending out.
+%=============================================================================
+
+\documentclass{resume}
+
+\begin{document}
+
+\resumeFooter{Harshit Verma}
+
+
+%=============================================================================
+%  HEADING
+%=============================================================================
+
+\begin{center}
+    {\Huge \scshape Harshit Verma} \\ \vspace{3pt}
+    \small
+    \phoneicon{(+1) 609-592-0031} \sep
+    \emaillink{hv0085@princeton.edu} \sep
+    \linkedinlink{harshit-verma-cbe} \sep
+    \githublink{vharshit}
+\end{center}
+
+
+%=============================================================================
+%  SUMMARY
+%=============================================================================
+
+\section{Summary}
+\summarytext{Ph.D. candidate working at the intersection of \bk{machine learning}, \bk{mathematical optimization}, and \bk{scientific computing}. Skilled in \bk{Python}, \bk{PyTorch}, and large-scale optimization (\bk{MINLP/MILP}), with \tmp{4}+ years building surrogate models, data pipelines, and decision-support tools that turn complex data into deployable, high-impact solutions across research and manufacturing.}
+
+
+%=============================================================================
+%  EDUCATION
+%=============================================================================
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Princeton University}{Princeton, NJ, USA}
+      {Ph.D. in Chemical and Biological Engineering \quad$|$\quad Advisor: Christos T. Maravelias}{Aug. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Awarded the \bk{Francis Robbins Upton Fellowship} as the most outstanding incoming engineering Ph.D. student at Princeton University.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Indian Institute of Technology (IIT) Kanpur}{Kanpur, India}
+      {B.Tech. in Chemical Engineering \quad$|$\quad Overall GPA: 9.5/10, Major GPA: 10/10}{Jul. 2017 -- Jul. 2021}
+      \resumeItemListStart
+        \resumeItem{Awarded the \bk{Proficiency} and \bk{Shri G.L. Kamdar Memorial Medals} for graduating as the Chemical Engineering valedictorian.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  PROFESSIONAL EXPERIENCE
+%=============================================================================
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Princeton University}{Princeton, NJ, USA}
+      {Graduate Research Assistant, Maravelias Research Group}{Aug. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built \bk{deep-learning surrogate models} integrating physics-based formulations to accelerate simulation by \tmp{20}$\times$, replacing costly first-principles solves.}
+        \resumeItem{Formulated and solved large-scale \bk{NLP/MINLP} optimization models (up to \tmp{5{,}000}+ variables) in Python (Pyomo) with GUROBI and BARON.}
+        \resumeItem{Designed \bk{superstructure optimization frameworks} for network synthesis, improving recovery of high-value products by \tmp{25\%}.}
+        \resumeItem{Developed reproducible \bk{data-analysis pipelines} for TEA/LCA, quantifying \tmp{30\%} cost and \tmp{20\%} footprint reductions.}
+        \resumeItem{Collaborated with \bk{DOE} and \bk{UCLA} teams to translate ML and optimization insights into deployable process improvements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dr. Reddy's Laboratories Ltd.}{Hyderabad, India}
+      {Process Engineer}{Aug. 2021 -- May 2022}
+      \resumeItemListStart
+        \resumeItem{Applied \bk{machine learning and data analytics} to API manufacturing data, lifting yield by \tmp{12\%} and efficiency by \tmp{15\%}.}
+        \resumeItem{Integrated ML models into \bk{digital manufacturing platforms} to drive process intensification across \tmp{3} production lines.}
+        \resumeItem{Engineered data-driven \bk{recommendation tools} that improved batch yield consistency by \tmp{18\%}.}
+        \resumeItem{Built \bk{real-time monitoring dashboards} over \tmp{5} sites, surfacing \tmp{\$1.2M}/yr in optimization opportunities.}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Technical Intern}{Summer 2020}
+      \resumeItemListStart
+        \resumeItem{Developed a \bk{computer-vision pipeline} for crystallization monitoring, integrating automated image analysis with Particle Vision Microscopy (PVM) data.}
+        \resumeItem{Implemented a MATLAB \bk{crystal-detection algorithm} and real-time visualization interface, reducing manual analysis time by \tmp{60\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  PUBLICATIONS
+%=============================================================================
+
+\section{Publications}
+  \resumeSubHeadingListStart
+    \publication{H. Verma}
+      {, D. Jassby, C. T. Maravelias, Membrane Network Synthesis for Metal Recovery: An Optimization-based Framework,}
+      {\textit{Separation and Purification Technology}}
+      {, 377 (2025) 134225.}
+      {https://doi.org/10.1016/j.seppur.2025.134225}
+    \publication{H. Verma}
+      {, D. Jassby, C. T. Maravelias, Superstructure-based Optimization of Membrane Network System for Multicomponent Liquid Mixture Separation,}
+      {\textit{Journal of Membrane Science}}
+      {, 717 (2025) 123574.}
+      {https://doi.org/10.1016/j.memsci.2024.123574}
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  OTHER RESEARCH EXPERIENCE
+%=============================================================================
+
+\section{Other Research Experience}
+  \resumeSubHeadingListStart
+    \researchHeading
+      {Transport Modeling of Fluid Flow in Porous Media for Enhanced Oil Recovery}{IIT Kanpur, India}
+      {Advisor: Prof. Himanshu Sharma}{Dec. 2019 -- Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{Developed \bk{MATLAB numerical simulations} of two-phase flow computing pressure drops, saturation fronts, and concentration distributions.}
+        \resumeItem{Quantified the impact of porosity, permeability, and injection rate on flow behavior to inform enhanced-oil-recovery strategies.}
+      \resumeItemListEnd
+    \researchHeading
+      {Plant Control Dynamics \& Optimization of the Butane Isomerization Process}{IIT Kanpur, India}
+      {Advisor: Prof. Nitin Kaistha}{Aug. 2020 -- Jun. 2021}
+      \resumeItemListStart
+        \resumeItem{Built a \bk{plant-wide dynamic model} in Aspen Plus Dynamics, achieving a \tmp{3}$\times$ improvement in dynamic performance across \tmp{3} throughput regimes.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  HONORS & AWARDS
+%=============================================================================
+
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \award{2021}{Excellence in Community Services Award, 54th Annual Convocation}{IIT Kanpur, India}
+    \award{2021}{Ravi and Rohini Sakhuja Scholarship, 54th Annual Convocation}{IIT Kanpur, India}
+    \award{2019, 2020, 2021}{Academic Excellence Award, Annual Academic Ceremony}{IIT Kanpur, India}
+    \award{2019, 2020}{Vasudeo Laxman Sahasrabuddhe Vaidya Scholarship}{IIT Kanpur, India}
+  \resumeSubHeadingListEnd
+
+
+%=============================================================================
+%  TECHNICAL SKILLS
+%=============================================================================
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, Julia, MATLAB, C, SQL} \\
+     \textbf{Data Science \& ML}{: PyTorch, NumPy, Pandas, Matplotlib, Seaborn, scikit-learn} \\
+     \textbf{Optimization}{: Pyomo, JuMP, GAMS, GUROBI, BARON, MINLP, MILP, NLP, LP} \\
+     \textbf{Simulation \& Modeling}{: ASPEN Plus, COMSOL Multiphysics, OpenFOAM, FLUENT} \\
+     \textbf{Tools}{: \LaTeX, Git, MS Excel, PowerPoint, Word}
+    }}
+ \end{itemize}
+
+
+\end{document}
