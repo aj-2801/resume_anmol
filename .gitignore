@@ -18,7 +18,7 @@
 *.xdv
 
 output/*.pdf
-variants/*.pdf
+variants/
 
 # Editor/IDE files
 *.swp
