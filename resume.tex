@@ -1,11 +1,5 @@
-%=============================================================================
-%  MY RESUME
-%  Uses: resume.cls (template class file)
-%  
-%  Edit this file for your content. The template (resume.cls) stays unchanged.
-%=============================================================================
-
 \documentclass{resume}
+\usepackage{ragged2e}
 
 \begin{document}
 
@@ -18,26 +12,44 @@
 %=============================================================================
 
 \begin{center}
-    {\Huge \scshape Jake Ryan} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-    \href{https://github.com/...}{\underline{github.com/jake}}
+    {\Huge \bfseries \scshape Harshit Verma} \vspace{2pt} \\
+    \small
+    \phoneicon{(+1) 609-592-0031} \sep
+    \emaillink{hv0085@princeton.edu} \sep
+    \href{https://linkedin.com/in/harshit-verma-cbe}{\faLinkedin\ \underline{harshit-verma}} \sep
+    \href{https://github.com/hverma99}{\faGithub\ \underline{hverma99}} \sep
+    \href{https://scholar.google.com/citations?user=u9gTEYcAAAAJ&hl=en&authuser=1}{\aiGoogleScholar\ \underline{hverma99}}
 \end{center}
 
-% TIP: To use icons instead, replace the heading above with:
-%
-% \begin{center}
-%     {\Huge \scshape Your Name} \\
-%     \vspace{1pt}
-%     \small
-%     \phoneicon{(+1) 000-000-0000} \sep
-%     \emaillink{you@university.edu} \sep
-%     \linkedinlink{your-linkedin} \sep
-%     \githublink{your-github}
-%     % \sep \scholarlink{your-scholar-id}
-%     % \sep \orcidlink{0000-0000-0000-0000}
-%     % \sep \websitelink{yoursite.com}
-% \end{center}
+%=============================================================================
+%  SUMMARY
+%=============================================================================
+
+\section{\bfseries Summary}
+{\justifying\noindent\small
+Modeling, simulation, and optimization professional with 5+ years of experience in process optimization, 
+scientific machine learning, and process systems engineering.
+Deep expertise in large-scale mixed-integer programming, physics-informed deep learning, techno-economic analysis
+applied to operational decision-making in chemical process systems.
+Proven ability to translate complex operational problems into production-ready modeling and optimization solutions,
+with hands-on experience at American Airlines (irregular-operations recovery) and Dr.\ Reddy's Laboratories (process intensification).
+\par
+
+
+%=============================================================================
+%  TECHNICAL SKILLS
+%=============================================================================
+
+\section{\bfseries Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={$\bullet$}, itemsep=0pt, parsep=1pt]
+    \small
+    \item \textbf{Programming}: Python (Pandas, Pyomo, SciPy, PyTorch, Scikit-learn), JAVA, C++, Julia, GAMS, MATLAB, \LaTeX
+    \item \textbf{Optimization}: Mixed-Integer Programming (MILP/MINLP), Integer Programming (IP), Non-Linear Programming (NLP), Stochastic Programming, Simulation-based Optimization
+    \item \textbf{Machine Learning / AI}: PyTorch, Scikit-learn, NumPy, Pandas, Matplotlib
+    \item \textbf{Process Simulation}: Aspen Plus, Aspen Plus Dynamics, COMSOL
+    \item \textbf{Sustainability \& LCA}: GaBi, GREET, TRACI 2.2
+    \item \textbf{Tools \& Platforms}: Git, LaTeX, Tableau, Linux, Docker
+ \end{itemize}
 
 
 %=============================================================================
@@ -121,21 +133,6 @@
             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
-
-
-%=============================================================================
-%  TECHNICAL SKILLS
-%=============================================================================
-
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-    }}
- \end{itemize}
 
 
 %=============================================================================
