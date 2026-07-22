@@ -1,4 +1,3 @@
-\
 %=============================================================================
 %
 %  RESUME TEMPLATE
@@ -71,6 +70,7 @@
 \usepackage{fontawesome5}          % Icons: \faGithub \faLinkedin \faEnvelope etc.
 \usepackage{xcolor}                % Extended color support
 \usepackage{academicons}           % Academic icons: \aiGoogleScholar \aiOrcid etc.
+\usepackage{lmodern}               % Modern font with bold small caps support
 \input{glyphtounicode}
 
 
@@ -114,6 +114,7 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+\setlength{\footskip}{4.1pt}       % Fix fancyhdr warning
 
 \urlstyle{same}
 \raggedbottom
@@ -271,7 +272,7 @@
 %=============================================================================
 
 \begin{center}
-    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
+    {\Huge \scshape Jake Ryan} \\ \vspace{1pt}
     \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$
     \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
     \href{https://github.com/...}{\underline{github.com/jake}}
@@ -280,7 +281,7 @@
 % TIP: To use icons instead, replace the heading above with:
 %
 % \begin{center}
-%     \textbf{\Huge \scshape Your Name} \\
+%     {\Huge \scshape Your Name} \\
 %     \vspace{1pt}
 %     \small
 %     \phoneicon{(+1) 000-000-0000} \sep
