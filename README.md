@@ -7,8 +7,8 @@ LaTeX-based resume with a reusable template class.
 ```
 ├── resume.cls          # Template class (DO NOT EDIT for content changes)
 ├── resume.tex          # Your actual resume (EDIT THIS)
-├── main.tex            # Original combined file (reference/backup)
-├── output/             # Compiled PDFs
+├── template.tex        # Original combined file (reference/backup)
+├── output/             # Compiled PDFs (aux files auto-cleaned)
 └── variants/           # (future) Role-specific versions
 ```
 
