@@ -29,10 +29,10 @@
 {\justifying\noindent\small
 Modeling, simulation, and optimization professional with 5+ years of experience in process optimization, 
 scientific machine learning, and process systems engineering.
-Deep expertise in large-scale mixed-integer programming, physics-informed deep learning, techno-economic analysis
+Deep expertise in large-scale mixed-integer programming, physics-informed deep learning, and data analytics
 applied to operational decision-making in chemical process systems.
 Proven ability to translate complex operational problems into production-ready modeling and optimization solutions,
-with hands-on experience at American Airlines (irregular-operations recovery) and Dr.\ Reddy's Laboratories (process intensification).
+with hands-on industrial experience at American Airlines (irregular-operations recovery) and Dr.\ Reddy's Laboratories (process intensification).
 \par
 
 
@@ -41,15 +41,47 @@ with hands-on experience at American Airlines (irregular-operations recovery) an
 %=============================================================================
 
 \section{\bfseries Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={$\bullet$}, itemsep=0pt, parsep=1pt]
+ \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, itemsep=0pt, parsep=1pt]
     \small
-    \item \textbf{Programming}: Python (Pandas, Pyomo, SciPy, PyTorch, Scikit-learn), JAVA, C++, Julia, GAMS, MATLAB, \LaTeX
-    \item \textbf{Optimization}: Mixed-Integer Programming (MILP/MINLP), Integer Programming (IP), Non-Linear Programming (NLP), Stochastic Programming, Simulation-based Optimization
-    \item \textbf{Machine Learning / AI}: PyTorch, Scikit-learn, NumPy, Pandas, Matplotlib
-    \item \textbf{Process Simulation}: Aspen Plus, Aspen Plus Dynamics, COMSOL
-    \item \textbf{Sustainability \& LCA}: GaBi, GREET, TRACI 2.2
-    \item \textbf{Tools \& Platforms}: Git, LaTeX, Tableau, Linux, Docker
+    \item \textbf{Programming}: Python (Pyomo, SciPy, PyTorch, Scikit-learn), JAVA, C, C++, Julia, GAMS, MATLAB, \LaTeX
+    \item \textbf{Optimization}: Linear Programming (LP), Non-Linear Programming (NLP), Mixed-Integer Programming (MILP/MINLP), Supply Chain Optimization, Simulation-based Optimization, FICO Xpress, BARON, Gurobi, CPLEX, IPOPT
+    \item \textbf{Machine Learning / AI}: Deep Learning, Physics-Informed Neural Networks, Surrogate Modeling, Random Forests, XGBoost, Time Series Forecasting, Dimensionality Reduction, Clustering
+    \item \textbf{Modeling \& Simulation}: Aspen Plus, Aspen Custom Modeler (ACM), gPROMS, COMSOL, GaBi, Techno-Economic Analysis (TEA), Life-Cycle Assessment (LCA), Sensitivity Analysis, Dynamic Simulation
+    \item \textbf{Data Analytics \& Visualization}: Tableau, PowerBI, Pandas, Excel, Matplotlib, Seaborn
  \end{itemize}
+
+ 
+%=============================================================================
+%  EXPERIENCE
+%=============================================================================
+
+\section{\bfseries Work Experience}
+  \resumeSubHeadingListStart
+
+    % --- Position 1 ---
+    \resumeSubheading
+      {Princeton University}{Aug. 2022 -- Present}
+      {Graduate Research Assistant -- Maravelias Research Group}{Princeton, NJ}
+      \resumeItemListStart
+        \resumeItem{Formulated superstructure-based optimization models and developed solution methods to synthesize resource-recovery process systems, solving large-scale instances (10{,}000+ variables and equations) to global optimality within minutes}
+        \resumeItem{Discovered novel process configurations that cut total annualized cost by 10-20\% compared to conventional processes, demonstrated across multiple resource-recovery case studies}
+        \resumeItem{Developed and open-sourced \href{https://github.com/hverma99/pinnse}{\texttt{pinnse}} (PyTorch-based Python package), a generalized physics-informed neural network (PINN) framework for forward process modeling \& simulation and inverse parameter estimation}
+        \resumeItem{Embedded trained neural network surrogates within process optimization models, and formulated solution methods to improve the computational efficiency of the resulting hybrid, data-driven formulations}
+        \resumeItem{Led system-level optimization, TEA, and LCA of a pilot-validated wastewater valorization system, in collaboration with experimental groups at UCLA, lowering treatment cost from \$1.36/m\textsuperscript{3} to net-negative $-$\$0.42/m\textsuperscript{3}}
+      \resumeItemListEnd
+
+    % --- Position 2 ---
+    \vspace{5pt}
+    \resumeSubheading
+      {American Airlines}{Jun. 2026 -- Aug. 2026}
+      {Graduate Operations Research \& Advanced Analytics Intern}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Built and solved mixed-integer linear programs to re-route passengers disrupted by irregular operations (IROP) onto remaining flights, minimizing delay and unmet demand across events of up to 20{,}000+ passengers and 8{,}800+ itineraries}
+        \resumeItem{Designed a recommendation algorithm that proposes new flight legs to recover still-stranded passengers, sizing each leg by aircraft fleet and screening on break-even economics via a greedy, slot-feasible allocation heuristic}
+        \resumeItem{Back-tested across 75 historical IROP events (6 U.S. hubs), re-routing 130{,}000+ passengers and delivering recovery insights to network-planning stakeholders via executive Tableau dashboards}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 
 %=============================================================================
@@ -59,54 +91,11 @@ with hands-on experience at American Airlines (irregular-operations recovery) an
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
+      {Princeton University}{Princeton, NJ}
+      {PhD in Chemical Engineering}{Aug. 2022 -- Jun. 2027}
     \resumeSubheading
-      {Blinn College}{Bryan, TX}
+      {In}{Bryan, TX}
       {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
-  \resumeSubHeadingListEnd
-
-
-%=============================================================================
-%  EXPERIENCE
-%=============================================================================
-
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    % --- Position 1 ---
-    \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
-      \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
-      \resumeItemListEnd
-
-    % --- Position 2 ---
-    \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-      \resumeItemListEnd
-
-    % --- Position 3 ---
-    \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 
