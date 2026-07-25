@@ -1,3 +1,4 @@
+
 \documentclass{resume}
 \usepackage{ragged2e}
 
@@ -12,15 +13,25 @@
 %=============================================================================
 
 \begin{center}
-    {\Huge \bfseries \scshape Joshi} \vspace{2pt} \\
+    {\Huge \bfseries \scshape Anmol Joshi} \vspace{2pt} \\
     \small
-    \phoneicon{(+1) 609-592-0031} \sep
-    \emaillink{hv0085@princeton.edu} \sep
-    \href{https://linkedin.com/in/harshit-verma-cbe}{\faLinkedin\ \underline{harshit-verma}} \sep
-    \href{https://github.com/hverma99}{\faGithub\ \underline{hverma99}} \sep
-    \href{https://scholar.google.com/citations?user=u9gTEYcAAAAJ&hl=en&authuser=1}{\aiGoogleScholar\ \underline{hverma99}}
+    \phoneicon{(+1) 607-697-5620} \sep
+    \emaillink{aj446@cornell.edu} \sep
+    \href{https://linkedin.com/in/anmol-joshi-74150b176/}{\faLinkedin\ \underline{anmol-joshi}} \sep
+    \href{https://github.com/aj-2801}{\faGithub\ \underline{aj-2801}} \sep
+    \href{https://scholar.google.com/citations?user=u9gTEYcAAAAJ&hl=en&authuser=1}{\aiGoogleScholar\ \underline{anmol-joshi}}
 \end{center}
 
+%=============================================================================
+%  SUMMARY
+%=============================================================================
+
+\section{\bfseries Summary}
+{\justifying\noindent\small
+Ph.D. candidate in Chemical Engineering specializing in computational fluid dynamics, multiphysics modeling, and high-performance computing. 
+I develop large-scale DNS solvers and predictive simulations for complex engineering applications involving turbulence and particle–fluid interactions. 
+My work bridges fundamental physical modeling and scalable numerical methods to advance multiphysics simulations on distributed-memory systems. 
+\par
 
 
 %=============================================================================
@@ -30,11 +41,10 @@
 \section{\bfseries Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, itemsep=0pt, parsep=1pt]
     \small
-    \item \textbf{Programming}: Python (Pyomo, SciPy, PyTorch, Scikit-learn), JAVA, C, C++, Julia, GAMS, MATLAB, \LaTeX
-    \item \textbf{Optimization}: Linear Programming (LP), Non-Linear Programming (NLP), Mixed-Integer Programming (MILP/MINLP), Supply Chain Optimization, Simulation-based Optimization, FICO Xpress, BARON, Gurobi, CPLEX, IPOPT
-    \item \textbf{Machine Learning / AI}: Deep Learning, Physics-Informed Neural Networks, Surrogate Modeling, Random Forests, XGBoost, Time Series Forecasting, Dimensionality Reduction, Clustering
-    \item \textbf{Modeling \& Simulation}: Aspen Plus, Aspen Custom Modeler (ACM), gPROMS, COMSOL, GaBi, Techno-Economic Analysis (TEA), Life-Cycle Assessment (LCA), Sensitivity Analysis, Dynamic Simulation
-    \item \textbf{Data Analytics \& Visualization}: Tableau, PowerBI, Pandas, Excel, Matplotlib, Seaborn
+    \item \textbf{Programming \& Software}: Python, MATLAB, Fortran, C/C++, MPI, Bash/Linux, \LaTeX, ANSYS Fluent, Git, Paraview, Mathematica, ASPEN Plus (basic familiarity)  
+    \item \textbf{CFD \& Numerical Methods}: Direct numerical simulation (DNS), Pseudo-spectral and Finite-difference methods, CFD Turbulence Modeling, Two-phase flow Modeling, Multiphysics Simulations, Meshing techniques 
+    \item \textbf{Technical Expertise}: Computational \& Theoretical Fluid Dynamics, Reduced-order methods, Particle-laden flows 
+    \item \textbf{High-Performance Computing}: MPI-based parallel computing on HPC clusters, scalable CFD solver development 
  \end{itemize}
 
  
@@ -47,25 +57,39 @@
 
     % --- Position 1 ---
     \resumeSubheading
-      {Princeton University}{Aug. 2022 -- Present}
-      {Graduate Research Assistant -- Maravelias Research Group}{Princeton, NJ}
+      {Cornell University}{Aug. 2022 -- Present}
+      {Graduate Research Assistant -- Koch Research Group}{Ithaca, NY}
+      \vspace{4pt}
       \resumeItemListStart
-        \resumeItem{Formulated superstructure-based optimization models and developed solution methods to synthesize resource-recovery process systems, solving large-scale instances (10{,}000+ variables and equations) to global optimality within minutes}
-        \resumeItem{Discovered novel process configurations that cut total annualized cost by 10-20\% compared to conventional processes, demonstrated across multiple resource-recovery case studies}
-        \resumeItem{Developed and open-sourced \href{https://github.com/hverma99/pinnse}{\texttt{pinnse}} (PyTorch-based Python package), a generalized physics-informed neural network (PINN) framework for forward process modeling \& simulation and inverse parameter estimation}
-        \resumeItem{Embedded trained neural network surrogates within process optimization models, and formulated solution methods to improve the computational efficiency of the resulting hybrid, data-driven formulations}
-        \resumeItem{Led system-level optimization, TEA, and LCA of a pilot-validated wastewater valorization system, in collaboration with experimental groups at UCLA, lowering treatment cost from \$1.36/m\textsuperscript{3} to net-negative $-$\$0.42/m\textsuperscript{3}}
+        \vspace{10pt}
+        \textbf{Inertial SBT for particle-fluid interactions at finite Reynolds numbers}
+        \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, itemsep=0pt, parsep=1pt]
+          \resumeItem{Developed a multiscale asymptotic model, an Inertial Slender-body theory (SBT), for nonlinear particle–fluid dynamics over particle Reynolds numbers $\mathrm{Re} \sim O(1-100)$, providing a surrogate model for computationally expensive fully resolved Navier–Stokes simulations.}
+          \resumeItem{Developed and open-sourced \href{https://github.com/aj-2801/BeyondJeffery}{\texttt{BeyondJeffery}}, an MPI-parallel Fortran framework implementing the Inertial SBT to predict finite-Reynolds-number fiber translation, rotation, settling, Jeffery-orbit drift, and gravity–shear dynamics in general linear flows.}
+          \resumeItem{Collaborated with experimentalists at York University (Canada) to analyze the spinning dynamics of sedimenting S-shaped fibers using the Inertial SBT to interpret and validate experimental observations.}
+        \end{itemize}
+        \vspace{10pt}
+        \textbf{Two-way-coupled DNS solver to study particle-turbulence interactions}
+        \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, itemsep=0pt, parsep=1pt]
+          \resumeItem{Designed and developed a distributed-memory pseudo-spectral direct numerical simulation (DNS) solver in Fortran and MPI for multi-physics simulation of 3D fluid flows, achieving computational efficiency and scaling comparable to state-of-the-art FFT-based DNS frameworks.}
+          \resumeItem{Implemented the DNS solver for turbulence simulations up to $512^3$ grid resolution, processing 10+ GB datasets, and managing cluster deployments via linux command line.}
+          \resumeItem{Integrated the Inertial SBT with the DNS solver to develop a novel multi-scale simulation framework \href{https://github.com/aj-2801/Fiber_DNS_SBT}{\texttt{Fiber\_DNS\_SBT}}, enabling resolution of sub-grid fiber-scale physics within large-scale simulations of turbulent flows, and providing a computationally efficient alternative to fully resolved simulations.}
+          \resumeItem{Profiled and optimized the performance of \href{https://github.com/aj-2801/Fiber_DNS_SBT}{\texttt{Fiber\_DNS\_SBT}}, improving scalability on multi-node HPC clusters from its initial implementation.}
+          \resumeItem{Designed and executed DOE-informed parameter studies to quantify the effects of Reynolds number, particle geometry, turbulence intensity, and settling parameters on fiber orientation, rotation, and transport in isotropic turbulent flows.}
+          \resumeItem{Performed time-series analysis and post-processing in Python and MATLAB of large-scale simulation data for particle-flow dynamics in turbulence, computing autocorrelation functions, decorrelation timescales, and stochastic behavior.}
+        \end{itemize}
       \resumeItemListEnd
 
     % --- Position 2 ---
     \vspace{5pt}
     \resumeSubheading
-      {American Airlines}{Jun. 2026 -- Aug. 2026}
-      {Graduate Operations Research \& Advanced Analytics Intern}{Dallas, TX}
+      {Dr. Reddy's Laboratories Ltd.}{Jun. 2026 -- Aug. 2026}
+      {Process Engineer}{Hyderabad, India}
+      \vspace{4pt} 
       \resumeItemListStart
-        \resumeItem{Built and solved mixed-integer linear programs to re-route passengers disrupted by irregular operations (IROP) onto remaining flights, minimizing delay and unmet demand across events of up to 20{,}000+ passengers and 8{,}800+ itineraries}
-        \resumeItem{Designed a recommendation algorithm that proposes new flight legs to recover still-stranded passengers, sizing each leg by aircraft fleet and screening on break-even economics via a greedy, slot-feasible allocation heuristic}
-        \resumeItem{Back-tested across 75 historical IROP events (6 U.S. hubs), re-routing 130{,}000+ passengers and delivering recovery insights to network-planning stakeholders via executive Tableau dashboards}
+        \resumeItem{Designed and scaled up manufacturing skids to produce complex pharmaceutical injectable formulations such as nanoparticles, liposomes, and microspheres.}
+        \resumeItem{Coordinated qualification, integration, and functionality testing of several process utilities including chillers, vacuum pumps, and thin-film evaporators, among others.}
+        \resumeItem{Collaborated with cross-functional teams to ensure seamless translation from lab-scale to pilot-scale operations.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -78,38 +102,25 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Princeton University}{Princeton, NJ}
-      {PhD in Chemical Engineering}{Aug. 2022 -- Jun. 2027}
+      {Cornell University}{Ithaca, NY}
+      {PhD in Chemical Engineering}{Aug. 2022 -- May 2027}
     \resumeSubheading
-      {In}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+      {Indian Institute of Technology, Kharagpur}{Kharagpur, India}
+      {B.Tech. in Chemical Engineering}{Jul. 2017 -- May 2021}
   \resumeSubHeadingListEnd
 
 
 %=============================================================================
-%  PROJECTS
+%  COURSEWORK
 %=============================================================================
 
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user's repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
+\section{Relevant Coursework}
+  \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, itemsep=0pt, parsep=1pt]
+    \small
+    \item \textbf{Chemical Engineering}: Fluid Dynamics and Heat Transfer, Advanced Thermodynamics, Aerosols \& Colloids, Process Control, Biomolecular Engineering 
+    \item \textbf{Numerical methods}: Linear Algebra, Matrix Computations, Spectral Methods 
+    \item \textbf{Probability, Statistics \& Machine Learning}: Foundations of Machine learning, Probability \& Statistics, Regression and Time Series Models 
+  \end{itemize}
 
 %=============================================================================
 %=============================================================================
@@ -119,96 +130,122 @@
 %=============================================================================
 %=============================================================================
 
-% %=========================================================================
-% %  PUBLICATIONS
-% %=========================================================================
-%
-% \section{Publications}
-%   \resumeSubHeadingListStart
-%     \publication{H. Verma}
-%       {, D. Jassby, C. T. Maravelias, Membrane Network Synthesis for Metal Recovery: An Optimization-based Framework,}
-%       {\textit{Separation and Purification Technology}}
-%       {, 377 (2025) 134225.}
-%       {https://doi.org/10.1016/j.seppur.2025.134225}
-%   \resumeSubHeadingListEnd
+%=========================================================================
+%  PUBLICATIONS
+%=========================================================================
 
-% %=========================================================================
-% %  CONFERENCE PRESENTATIONS
-% %=========================================================================
-%
-% \section{Conference Presentations}
-%   \resumeSubHeadingListStart
-%     % With DOI:
-%     \conference{H. Verma}
-%       {and C. T. Maravelias, Synthesis of Liquid Mixture Separation Networks,}
-%       {\textit{ESCAPE35 Conference}}{, Ghent, Belgium, July 6-9, 2025.}
-%       {Systems \& Control Transactions 4, 33-39}
-%       {https://doi.org/10.69997/sct.151896}
-%     % Without DOI (leave last arg empty):
-%     \conference{H. Verma}
-%       {and C. T. Maravelias, Another Talk Title,}
-%       {\textit{AIChE Annual Meeting}}{, Boston, MA, November 2-6, 2025.}
-%       {Session Name}
-%       {}
-%   \resumeSubHeadingListEnd
+\section{Publications}
+  \resumeSubHeadingListStart
+    \publication{A. Joshi}
+      {, A. Roy, A. Sharma, D.L. Koch, An inertial slender-body theory,}
+      {\textit{Journal of Fluid Mechanics}}
+      { (under review),}
+      {https://arxiv.org/abs/2607.02993}
+  \resumeSubHeadingListEnd 
 
-% %=========================================================================
-% %  OTHER RESEARCH EXPERIENCE
-% %=========================================================================
-%
-% \section{Other Research Experience}
-%   \resumeSubHeadingListStart
-%     \researchHeading
-%       {Project Title}{IIT Kanpur, India}
-%       {Advisor: Prof. Name}{Aug. 2020 -- Jun. 2021}
-%       \resumeItemListStart
-%         \resumeItem{Built a \bk{plant-wide dynamic model} in Aspen Plus Dynamics}
-%       \resumeItemListEnd
-%   \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \publication{\textnormal{A. Hamidi}}
+      {, \textbf{A. Joshi}, D.L. Koch, M.D. Gordon, R.E. Hanson, Low Reynolds Number Settling and Spinning of S-Shaped Rods,}
+      {\textit{Journal of Fluid Mechanics}}
+      { (under review)}
+      {}
+  \resumeSubHeadingListEnd
 
-% %=========================================================================
-% %  LEADERSHIP
-% %=========================================================================
-%
-% \section{Leadership}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {Organization Name}{City, Country}
-%       {Role Title}{Start -- End}
-%       \resumeItemListStart
-%         \resumeItem{What you led or accomplished}
-%       \resumeItemListEnd
-%   \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \publication{A. Joshi}
+      { and D.L. Koch, Inertial slender-body theory for a particle translating and rotating in a linear velocity field,}
+      {\textit{Journal of Fluid Mechanics}}
+      { (in preparation, PDF available upon request)}
+      {}
+  \resumeSubHeadingListEnd  
 
-% %=========================================================================
-% %  SOCIAL INNOVATION & IMPACT
-% %=========================================================================
-%
-% \section{Social Innovation \& Impact}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {Project Name}{City, Country}
-%       {Role, Organization}{Start -- End}
-%       \resumeItemListStart
-%         \resumeItem{Impact and outcome}
-%       \resumeItemListEnd
-%   \resumeSubHeadingListEnd
+%=========================================================================
+%  CONFERENCE PRESENTATIONS
+%=========================================================================
 
-% %=========================================================================
-% %  HONORS & AWARDS
-% %=========================================================================
-%
-% \section{Honors \& Awards}
-%   \resumeSubHeadingListStart
-%     \award{2022}{Francis Robbins Upton Fellowship}{Princeton University}
-%     \award{2021}{Proficiency Medal}{IIT Kanpur, India}
-%     \award{2019, 2020, 2021}{Academic Excellence Award}{IIT Kanpur, India}
-%   \resumeSubHeadingListEnd
+\section{Conference Presentations}
+  \resumeSubHeadingListStart
+    % With DOI:
+    \conference{A. Joshi}
+      {and D. L. Koch, Slender body theory for fluid-particle interactions at finite Reynolds numbers,}
+      {\textit{APS DFD Annual Meeting}}{, Washington, DC, November 19-21, 2023.}
+      {}
+      {https://meetings-archive.aps.org/dfd/2023/a31/3/}
+
+    \conference{A. Joshi}
+      {A. Roy and D. L. Koch, An inertial slender-body theory to characterize particle-fluid interactions at finite Reynolds numbers,}
+      {\textit{APS DFD Annual Meeting}}{, Salt Lake City, Utah, November 24-26, 2024.}
+      {}
+      {https://meetings.aps.org/Meeting/DFD24/Session/C04.17}
+  \resumeSubHeadingListEnd
+
+%=========================================================================
+%  UNDERGRADUATE RESEARCH EXPERIENCE
+%=========================================================================
+
+\section{Undergraduate Research Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Buoyancy-driven recirculation in sessile evaporating droplets} $|$ \emph{IIT Kharagpur, India}}{Aug. 2020 -- Apr. 2021}
+          \vspace{0.1pt} 
+          \resumeItemListStart
+            \resumeItem{Conducted a comprehensive theoretical and numerical study of buoyancy-driven recirculation in sessile evaporating droplets to evaluate the feasibility of droplet-based PCR.}
+            \resumeItem{Performed finite-volume CFD simulations in ANSYS Fluent and implemented user-defined functions (UDFs) to model evaporation-induced flow coupling inside the droplet.}
+            \resumeItem{Quantified the influence of substrate temperature, droplet volume, and wettability on recirculation strength, thermal convection, and evaporation dynamics.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Paper-based microfluidic device for ketone-body detection in urine} $|$ \emph{IIT Kharagpur, India}}{Feb. 2019 -- May 2019}
+          \vspace{0.1pt}
+          \resumeItemListStart
+            \resumeItem{Designed and fabricated paper-based microfluidic devices using inkjet-printed hydrophobic micro-pads for the detection of ketone bodies in urine.}
+            \resumeItem{Optimized channel geometry and reagent chemistry to improve signal intensity and diagnostic sensitivity.}
+            \resumeItem{Built an image-processing workflow in ImageJ to establish a calibration curve with less than 1\% error for acetone concentration measurement.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%=========================================================================
+%  LEADERSHIP
+%=========================================================================
+
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Organization Name}{City, Country}
+      {Role Title}{Start -- End}
+      \resumeItemListStart
+        \resumeItem{What you led or accomplished}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%=========================================================================
+%  SOCIAL INNOVATION & IMPACT
+%=========================================================================
+
+\section{Social Innovation \& Impact}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Project Name}{City, Country}
+      {Role, Organization}{Start -- End}
+      \resumeItemListStart
+        \resumeItem{Impact and outcome}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%=========================================================================
+%  HONORS & AWARDS
+%=========================================================================
+
+\section{Academic Distinctions \& Awards}
+  \resumeSubHeadingListStart
+    \award{2022}{Francis Robbins Upton Fellowship}{Princeton University}
+    \award{2021}{Proficiency Medal}{IIT Kanpur, India}
+    \award{2019, 2020, 2021}{Academic Excellence Award}{IIT Kanpur, India}
+  \resumeSubHeadingListEnd
 
 % %=========================================================================
 % %  TEACHING EXPERIENCE
 % %=========================================================================
-%
+
 % \section{Teaching Experience}
 %   \resumeSubHeadingListStart
 %     \teachingentry{Fall 2024}{Process and Energy Systems Design}
@@ -220,13 +257,15 @@
 % %=========================================================================
 % %  MULTIPLE POSITIONS AT SAME ORGANIZATION (example pattern)
 % %=========================================================================
-%
+
 %     % Use \resumeSubheading for the main/latest role,
 %     % then \resumeSubSubheading for earlier roles:
-%
+
+%     \resumeSubHeadingListStart
 %     \resumeSubheading
 %       {Dr. Reddy's Laboratories Ltd.}{Hyderabad, India}
 %       {Process Engineer}{Aug. 2021 -- May 2022}
+%       \vspace{4pt}
 %       \resumeItemListStart
 %         \resumeItem{Senior role accomplishment}
 %       \resumeItemListEnd
@@ -235,6 +274,7 @@
 %       \resumeItemListStart
 %         \resumeItem{Intern accomplishment}
 %       \resumeItemListEnd
+%     \resumeSubHeadingListEnd
 
 
 %=============================================================================

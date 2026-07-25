@@ -149,7 +149,7 @@
 %=============================================================================
 
 \newcommand{\resumeItem}[1]{
-  \item\small{{#1 \vspace{-2pt}}}
+  \item\small{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -179,8 +179,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=0pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 
 %=============================================================================
@@ -223,7 +223,7 @@
 \newcommand{\publication}[5]{
   \item\small{
     \textbf{#1}#2 #3#4
-    \ifx&#5& \else\href{#5}{\underline{DOI}}\fi
+    \ifx&#5& \else\href{#5}{\underline{arXiv}}\fi
     \vspace{-2pt}
   }
 }
